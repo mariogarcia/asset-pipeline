@@ -76,10 +76,10 @@ subprojects { project ->
 	    apply plugin: 'maven-publish'
 	    apply plugin: 'signing'
 	    afterEvaluate {
-	        signing {
-	            required { isReleaseVersion && gradle.taskGraph.hasTask("publish") }
-	            sign publishing.publications.maven
-	        }
+//	        signing {
+//	            required { isReleaseVersion && gradle.taskGraph.hasTask("publish") }
+//	            sign publishing.publications.maven
+//	        }
 	    }
 
 	    tasks.withType(Sign) {
@@ -95,10 +95,10 @@ subprojects { project ->
 }
 
 dependencies {
-	api 'org.codehaus.groovy:groovy:2.4.19'
-	api 'org.codehaus.groovy:groovy-templates:2.4.19'
-	api 'org.mozilla:rhino:1.7R4'
-	testImplementation 'org.spockframework:spock-core:1.3-groovy-2.4'
+	api "org.codehaus.groovy:groovy:$groovy"
+	api "org.codehaus.groovy:groovy-templates:$groovy"
+	api "org.mozilla:rhino:$rhino"
+	testImplementation "org.spockframework:spock-core:$spockframework"
 }
 
 test {
