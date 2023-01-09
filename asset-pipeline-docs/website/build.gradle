@@ -56,13 +56,13 @@ task copyApiDoc(type: Copy, dependsOn: ':asset-pipeline-core:groovydoc') {
     into 'src/assets/html/apidoc/'
 }
 
-task copyManual(type: Copy, dependsOn: ':asset-pipeline-docs:asciidoctor') {
-    from new File(project(':asset-pipeline-docs').buildDir,'/docs')
+task copyManual(type: Copy, dependsOn: ':guide:asciidoctor') {
+    from new File(project(':guide').buildDir,'/docs')
     into 'src/assets/html/manual/'
 }
 
-task copyManualNew(type: Copy, dependsOn: ':asset-pipeline-docs:asciidoctor') {
-    from new File(project(':asset-pipeline-docs').buildDir,'/docs')
+task copyManualNew(type: Copy, dependsOn: ':guide:asciidoctor') {
+    from new File(project(':guide').buildDir,'/docs')
     into 'src/assets/html/manual-new/'
 }
 
@@ -74,8 +74,8 @@ morpheus {
   applianceUrl = 'https://v2.morpheusdata.com'
   instance 'Asset-Pipeline Site'
   from {
-    resolverPath = new File(project(':asset-pipeline-site').buildDir, '/libs').canonicalPath
-    includes = ["asset-pipeline-site-${version}-all.jar"]
+    resolverPath = new File(project(':website').buildDir, '/libs').canonicalPath
+    includes = ["website-${version}-all.jar"]
   }
   if(project.hasProperty('bintrayUser')) {
     deployConfiguration = [
