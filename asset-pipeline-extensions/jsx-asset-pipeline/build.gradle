@@ -1,8 +1,7 @@
 buildscript {
     repositories {
-        // mavenLocal()
-        jcenter()
         maven {
+            gradlePluginPortal()
             url "http://xbib.org/repository"
         }
     }

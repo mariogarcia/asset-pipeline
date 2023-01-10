@@ -1,22 +1,7 @@
-
-
-buildscript {
-	repositories {
-		mavenLocal()
-		jcenter()
-	}
-	dependencies {
-	}
-}
-
 plugins {
 	id "io.spring.dependency-management" version "1.0.6.RELEASE"
 	// id "io.micronaut.library" version "1.0.0.RC13"
 }
-
-
-
-
 
 apply plugin: 'groovy'
 apply plugin: 'maven-publish'

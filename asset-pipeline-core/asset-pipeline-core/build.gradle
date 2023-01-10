@@ -1,14 +1,3 @@
-buildscript {
-	repositories {
-		mavenLocal()
-		jcenter()
-	}
-	dependencies {
-	}
-}
-
-
-
 apply plugin: 'java-library'
 apply plugin: 'groovy'
 apply plugin: 'maven-publish'
