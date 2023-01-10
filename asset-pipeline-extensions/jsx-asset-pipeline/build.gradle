@@ -17,7 +17,6 @@ apply plugin: 'java-library'
 apply plugin: 'idea'
 apply plugin: 'org.xbib.gradle.plugin.jflex'
 
-group = 'com.bertramlabs.plugins'
 ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
 
 configurations {

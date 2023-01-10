@@ -23,8 +23,6 @@ apply plugin: 'maven-publish'
 apply plugin: 'java-library'
 apply plugin: 'idea'
 
-group = 'com.bertramlabs.plugins'
-
 ext {
 	micronautVersion = '2.0.2'
 }

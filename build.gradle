@@ -24,9 +24,6 @@ ext {
     isReleaseVersion = !isBuildSnapshot
 }
 
-
-group = 'com.bertramlabs.plugins'
-
 repositories {
 	mavenCentral()
 }

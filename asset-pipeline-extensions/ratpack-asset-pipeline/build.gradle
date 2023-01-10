@@ -11,8 +11,6 @@ apply plugin: 'maven-publish'
 apply plugin: 'java-library'
 apply plugin: 'idea'
 
-group = 'com.bertramlabs.plugins'
-
 repositories {
     maven { url "http://oss.jfrog.org/artifactory/repo" }
 }

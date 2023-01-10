@@ -12,10 +12,6 @@ buildscript {
     }
 }
 
-
-
-group "com.bertramlabs.plugins"
-
 // apply plugin: 'maven-publish'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
