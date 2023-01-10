@@ -13,8 +13,6 @@ apply plugin: 'java-library'
 apply plugin: 'idea'
 
 group = 'com.bertramlabs.plugins'
-sourceCompatibility = '1.7'
-targetCompatibility = '1.7'
 
 ext.isReleaseVersion = !version.endsWith('SNAPSHOT')
 
@@ -34,12 +32,6 @@ sourceSets {
 java {
     withSourcesJar()
     withJavadocJar()
-}
-
-repositories {
-	jcenter()
-	mavenLocal()
-	mavenCentral()
 }
 
 dependencies {

@@ -21,11 +21,6 @@ apply plugin: "idea"
 apply plugin: 'asset-pipeline'
 apply plugin: 'morpheus'
 
-repositories {
-  mavenCentral()
-}
-
-
 dependencies {
 	implementation ratpack.dependency('handlebars')
   // Default SLF4J binding.  Note that this is a blocking implementation.

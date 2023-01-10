@@ -14,9 +14,6 @@ apply plugin: 'idea'
 group = 'com.bertramlabs.plugins'
 
 repositories {
-    jcenter()
-    mavenCentral()
-    mavenLocal()
     maven { url "http://oss.jfrog.org/artifactory/repo" }
 }
 

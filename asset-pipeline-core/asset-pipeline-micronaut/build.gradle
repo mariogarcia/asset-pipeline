@@ -24,12 +24,6 @@ apply plugin: 'java-library'
 apply plugin: 'idea'
 
 group = 'com.bertramlabs.plugins'
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
-repositories {
-	mavenCentral()
-	jcenter()
-}
 
 ext {
 	micronautVersion = '2.0.2'

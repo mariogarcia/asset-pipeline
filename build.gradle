@@ -90,8 +90,22 @@ subprojects { project ->
 	    tasks.withType(io.github.gradlenexus.publishplugin.InitializeNexusStagingRepository).configureEach {
 	        shouldRunAfter(tasks.withType(Sign))
 	    }
-    
     }
+
+	pluginManager.withPlugin("java", {
+		compileJava {
+			sourceCompatibility = "1.8"
+			targetCompatibility = "1.8"
+		}
+	})
+}
+
+allprojects {
+	repositories {
+		jcenter()
+		mavenCentral()
+		mavenLocal()
+	}
 }
 
 dependencies {

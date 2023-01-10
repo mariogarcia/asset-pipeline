@@ -15,17 +15,6 @@ apply plugin: 'idea'
 
 group = 'com.bertramlabs.plugins'
 ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
-sourceCompatibility = '1.7'
-targetCompatibility = '1.7'
-
-
-
-repositories {
-	mavenLocal()
-    jcenter()
-    mavenCentral()
-
-}
 
 java {
     withSourcesJar()
